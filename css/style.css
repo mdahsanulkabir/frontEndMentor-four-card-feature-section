@@ -8,6 +8,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    border: 1px solid red;
+    min-width: 375px;
+    padding: 80px 30px;
+}
+
 
 
 
