@@ -8,14 +8,124 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: hsl(0, 0%, 98%);
+}
+
 .container {
-    border: 1px solid red;
-    min-width: 375px;
-    padding: 80px 30px;
+    width: 375px;
+    padding: 83px 30px;
+    margin: 0 auto;
+}
+
+.banner {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.banner h2 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.banner h1 {
+    font-size: 24px;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 16px;
+    color: hsl(240, 2%, 69%);
 }
 
 
 
+.card   {
+    background-color: #fff;
+    min-width: 313px;
+    margin: auto;
+    border: 1px solid rebeccapurple;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 10px 10px -5px hsl(228, 20%, 64%);
+    margin-bottom: 25px;
+}
+
+.card:nth-of-type(1) {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.card:nth-of-type(2) {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.card:nth-of-type(3) {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.card:nth-of-type(4) {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(234, 12%, 34%);
+}
+
+.card p {
+    color: hsl(240, 2%, 69%);
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    width: 55px;
+    margin-left: auto;
+}
+
+@media (min-width: 885px) {
+    .container {
+        min-width: 80%;
+    }
+    .columns {
+        column-count: 2;
+        margin: auto;
+    }
+
+    .card {
+        break-inside: avoid;
+        width: 215px;
+    }
+
+    .supervisor {
+        break-after: avoid-column;
+    }
+}
+
+@media (min-width:1300px) {
+    .columns {
+        column-count: 3;
+        margin: auto;
+    }
+
+    .supervisor {
+        break-after: auto;
+    }
+
+    .team-builder {
+        break-after: avoid-column;
+    }
+
+    .supervisor,
+    .calculator {
+        position: relative;
+        top: 125px;
+    }
+}
 
 
 
